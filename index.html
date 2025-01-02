@@ -1,86 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Furniture web page</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body>
+  <body class="font-poppins h-full flex flex-col font-normal">
     <!-- Header -->
-    <header class="header">
-      <div clas="logo">
-        <svg
-          width="64"
-          height="64"
-          viewBox="0 0 64 64"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="40.5" cy="48.5" r="14.5" fill="#5B7138" />
-          <path d="M32 0L59.7128 48H4.28719L32 0Z" fill="#385804" />
-        </svg>
-      </div>
-      <div class="links">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Manufacturing</a></li>
-        </ul>
-      </div>
-      <div class="burger">
-        <svg
-          width="40"
-          height="13"
-          viewBox="0 0 40 13"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1 1H38.5"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
+    <header class="header bg-[#EFF2EB]">
+      <div class="container flex items-center">
+        <a class="mr-[101px]" href="index.html">
+          <img src="./imags/svg/logo.svg" alt="" />
+        </a>
+        <nav class="links w-full flex items-center justify-between py-[66px]">
+          <!-- <ul class="flex text-2xl gap-[55px]"> -->
+          <ul class="flex text-[22px] w-[580px]">
+            <li class="w-full text-center">
+              <a
+                href="#"
+                class="hover:font-semibold hover:underline  transition-all"
+                >Home</a
+              >
+            </li>
+            <li class="w-full text-center">
+              <a
+                href="#"
+                class="hover:font-semibold hover:underline  transition-all"
+                >Product</a
+              >
+            </li>
+            <li class="w-full text-center">
+              <a
+                href="#"
+                class="hover:font-semibold hover:underline  transition-all"
+                >About Us</a
+              >
+            </li>
+            <li class="w-full text-center mr-1">
+              <a
+                href="#"
+                class="hover:font-semibold hover:underline  transition-all"
+                >Manufacturing</a
+              >
+            </li>
+          </ul>
+
+          <img
+            class="cursor-pointer"
+            src="./imags/svg/burger-icon.svg"
+            alt="burger icon"
           />
-          <path
-            d="M11 12H38.5"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-        </svg>
+        </nav>
       </div>
     </header>
 
     <!-- Main -->
-    <main class="products">
-      <div class="main_product">
-        <h1>Your Room Stand Differents</h1>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget purus
-            auctor ut
-          </p>
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
-              purus auctor
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
-              purus auctor
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
-              purus auctor
-            </li>
-          </ul>
-        </div>
-      </div>
-    </main>
+    <main class="container grow">main</main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="container">footer</footer>
   </body>
 </html>
